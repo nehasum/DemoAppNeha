@@ -1,0 +1,11 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+			Namespace="public.lkmdemo.xsodata.empdata">
+			<EntityType Name="empvalsType">
+				<Key><PropertyRef Name="EMPID"/></Key><Property Name="EMPID" Type="Edm.Int32" Nullable="false"/><Property Name="EMPNAME" Type="Edm.String" MaxLength="100"/><Property Name="EMPROLE" Type="Edm.String" MaxLength="10"/></EntityType>
+			<EntityContainer Name="empdata" m:IsDefaultEntityContainer="true"><EntitySet Name="empvals" EntityType="public.lkmdemo.xsodata.empdata.empvalsType"/></EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
